@@ -1,0 +1,166 @@
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: radial-gradient(hsl(214, 67%, 56%),
+            hsl(238, 52%, 22%)); */
+}
+
+.headerContainer h1 {
+    color: white;
+    text-align: center;
+}
+
+.headerContainer h2 {
+    text-align: center;
+    font-size: 35px;
+    position: absolute;
+    top: 100px;
+    text-align: center;
+    animation: score 2s ease-in infinite;
+}
+
+@keyframes score {
+    0% {
+        font-size: 33px;
+    }
+
+    15% {
+        font-size: 34px;
+    }
+
+    25% {
+        font-size: 35px;
+    }
+
+    35% {
+        font-size: 36px;
+    }
+
+    50% {
+        font-size: 37px;
+    }
+
+    65% {
+        font-size: 36px;
+    }
+
+    75% {
+        font-size: 35px;
+    }
+
+    85% {
+        font-size: 34px;
+    }
+
+    100% {
+        font-size: 33px;
+    }
+}
+
+.score {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.lose {
+    color: rgb(255, 17, 0);
+}
+
+.win {
+    color: rgb(0, 255, 13);
+}
+
+.draw {
+    color: rgb(255, 129, 11);
+}
+
+
+
+.score .player1,
+.player2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(226, 224, 224);
+    border-radius: 3px;
+}
+
+.score .player1 p,
+.player2 p {
+    font-size: 30px;
+    margin-top: 0;
+}
+
+@media only screen and (max-width:600px) {
+    .headerContainer {
+        height: 135px;
+        width: 100%;
+    }
+
+    .score {
+        width: 300px;
+    }
+
+    .score .player1,
+    .player2 {
+        width: 70px;
+        height: 70px;
+    }
+
+    .headerContainer h2 {
+        width: 200px;
+        text-align: center;
+        font-size: 30px;
+        top: 70px;
+    }
+    .headerContainer h1 {
+        font-size: 28px;
+    }
+
+    @keyframes score {
+        0% {
+            font-size: 26px;
+        }
+
+        15% {
+            font-size: 27px;
+        }
+
+        25% {
+            font-size: 28px;
+        }
+
+        35% {
+            font-size: 29px;
+        }
+
+        50% {
+            font-size: 30px;
+        }
+
+        65% {
+            font-size: 29px;
+        }
+
+        75% {
+            font-size: 28px;
+        }
+
+        85% {
+            font-size: 27px;
+        }
+
+        100% {
+            font-size: 26px;
+        }
+    }
+
+}

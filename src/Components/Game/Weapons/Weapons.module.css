@@ -1,0 +1,83 @@
+.weapons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    bottom: -240px;
+    width: 370px;
+    text-align: center;
+
+}
+
+.weapons img {
+    width: 80px;
+    height: 90px;
+    text-align: center;
+    padding-bottom: 15px;
+    transition: transform 0.2s ease-in-out;
+
+}
+
+.weapons img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.playAgainBtn {
+    margin-top: -100px;
+    text-align: center;
+    padding: 8px;
+    font-size: 20px;
+    transition: 0.3s ease-out;
+    background-color: rgb(0, 250, 96);
+    border: 1px solid rgb(0, 250, 96);
+    border-radius: 30px;
+    outline: none;
+    overflow: hidden;
+}
+
+.playAgainBtn:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+.newGameLink {
+    text-decoration: none;
+    margin-top: -100px;
+    text-align: center;
+    padding: 8px;
+    font-size: 20px;
+    transition: 0.3s ease-out;
+    background-color: rgb(247, 137, 74);
+    border: 1px solid rgb(247, 137, 74);
+    border-radius: 30px;
+    outline: none;
+    overflow: hidden;
+}
+
+.newGameLink:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+@media only screen and (max-width:600px) {
+    .weapons {
+        position: relative;
+        top: 0px;
+    }
+
+    .newGameLink {
+        margin-top: 20px;
+    }
+
+    .playAgainBtn {
+        margin-top: 20px;
+    }
+
+    .weapons img {
+        width: 70px;
+        height: 80px;
+    }
+
+}

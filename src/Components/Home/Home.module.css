@@ -1,0 +1,97 @@
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.homeContainer  h1 {
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    margin-top: 100px;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+
+.homeContainer h3 {
+    animation: bor 2s ease-in infinite;
+    position: absolute;
+    color: yellow;
+}
+
+@keyframes bor {
+  0% {
+    font-size: 22px;
+  }
+  15% {
+    font-size: 23px;
+  }
+  25% {
+    font-size: 24px;
+  }
+  35% {
+    font-size: 25px;
+  }
+  50% {
+    font-size: 26px;
+  }
+  65% {
+    font-size: 25px;
+  }
+  75% {
+    font-size: 24px;
+  }
+  85% {
+    font-size: 23px;
+  }
+  100% {
+    font-size: 22px;
+  }
+}
+
+.homeContainer a {
+	  display: inline-block;
+    text-decoration: none;
+	  padding: 0.75rem 1.25rem;
+    margin-top: 200px;
+	 border-radius: 10rem;
+	 color: #fff;
+	 text-transform: uppercase;
+	 font-size: 1rem;
+	 letter-spacing: 0.15rem;
+	 transition: all 0.3s;
+	 position: relative;
+	 overflow: hidden;
+	 z-index: 1;
+}
+ .homeContainer a:after {
+	 content: '';
+	 position: absolute;
+	 bottom: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	 background-color: #0cf;
+	 border-radius: 10rem;
+	 z-index: -2;
+}
+ .homeContainer a:before {
+	 content: '';
+	 position: absolute;
+	 bottom: 0;
+	 left: 0;
+	 width: 0%;
+	 height: 100%;
+	 background-color: #008fb3;
+	 transition: all 0.3s;
+	 border-radius: 10rem;
+	 z-index: -1;
+}
+ .homeContainer a:hover {
+	 color: #fff;
+}
+ .homeContainer a:hover:before {
+	 width: 100%;
+}

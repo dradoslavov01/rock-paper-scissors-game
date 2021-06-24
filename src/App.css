@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+body {
+  background: radial-gradient(hsl(214, 47%, 23%),
+      hsl(237, 49%, 15%));
+}
